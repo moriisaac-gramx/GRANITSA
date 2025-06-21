@@ -35,7 +35,7 @@ app.use(express.json());
 
 // Route mounts
 console.log('🚀 Mounting all API routes...');
-// app.use('/api/auth', authRoutes);
+app.use('/api/auth', authRoutes);
 app.use('/api/orders', orderRoutes);
 app.use('/api/inventory', inventoryRoutes);
 app.use('/api/dashboard', dashboardRoutes);
